@@ -53,12 +53,14 @@ namespace txtreader
                 
                 
             }
-            string xd = toplam.ToString();
+            //int xd = 123456789;            
+            //string alo = String.Format("{0:0,0}", xd);
+            //MessageBox.Show(alo);
             string txt2, txt3;
             txt2 = textBox2.Text;
             txt3 = textBox3.Text;
-            label1.Text = "ZRAP"+(Convert.ToInt16(txt2).ToString("D4"))+"-"+(Convert.ToInt16(txt3).ToString("D4")) + "   Toplam : "+toplam.ToString("#,#", CultureInfo.InvariantCulture);
-            
+            label1.Text = "ZRAP"+(Convert.ToInt16(txt2).ToString("D4"))+"-"+(Convert.ToInt16(txt3).ToString("D4")) + "   Toplam : "+toplam.ToString("#", CultureInfo.InvariantCulture);            
+
 
             string IsDigitsOnly(string str)
             {
